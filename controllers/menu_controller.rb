@@ -20,35 +20,35 @@ class MenuController
     selection = gets.to_i
 
     case selection
-      when 1
-        system "clear"
-        view_all_entries
-        main_menu
-      when 2
-        system "clear"
-        print "Enter the entry number: "
-        e_num = gets.chomp
-        view_entry_by_number(e_num)
-        main_menu
-      when 3
-        system "clear"
-        create_entry
-        main_menu
-      when 4
-        system "clear"
-        search_entries
-        main_menu
-      when 5
-        system "clear"
-        read_csv
-        main_menu
-      when 6
-        puts "\nGood-bye!\n\n"
-        exit(0)
-      else
-        system "clear"
-        puts "Sorry, that is not a valid input\n\n"
-        main_menu
+    when 1
+      system "clear"
+      view_all_entries
+      main_menu
+    when 2
+      system "clear"
+      print "Enter the entry number: "
+      e_num = gets.chomp
+      view_entry_by_number(e_num)
+      main_menu
+    when 3
+      system "clear"
+      create_entry
+      main_menu
+    when 4
+      system "clear"
+      search_entries
+      main_menu
+    when 5
+      system "clear"
+      read_csv
+      main_menu
+    when 6
+      puts "\nGood-bye!\n\n"
+      exit(0)
+    else
+      system "clear"
+      puts "Sorry, that is not a valid input\n\n"
+      main_menu
     end
   end
 
@@ -107,16 +107,16 @@ class MenuController
     selection = gets.chomp
 
     case selection
-      when "n"
-      when "d"
-      when "e"
-      when "m"
-        system "clear"
-        main_menu
-      else
-        system "clear"
-        puts "#{selection} is not a valid input\n\n"
-        entry_submenu(entry)
+    when "n"
+    when "d"
+    when "e"
+    when "m"
+      system "clear"
+      main_menu
+    else
+      system "clear"
+      puts "#{selection} is not a valid input\n\n"
+      entry_submenu(entry)
     end
   end
 end
